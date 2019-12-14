@@ -4,6 +4,8 @@ RUN adduser -D microblog
 
 WORKDIR /home/microblog
 
+CMD ["sh"]
+
 COPY requirements.txt requirements.txt
 RUN python -m venv env
 RUN env/bin/pip install -r requirements.txt
